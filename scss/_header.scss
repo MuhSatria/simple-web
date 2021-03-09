@@ -1,0 +1,84 @@
+.notif {
+  display: block;
+  font-size: 14px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: $smokeGrey;
+  transition: all 2s ease-out;
+
+  &__text {
+    max-width: 720px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+
+    @include breakpoint-down (small) {
+      display: block;
+      padding: 10px 15px;
+    }
+    .btn-notif {
+      margin: auto 0;
+      flex: none;
+
+      .button__cta {
+        padding: 15px 20px;
+        background-color: $blue;
+        border-radius: 2px;
+        display: inline-block;
+
+        @include breakpoint-down (small) {
+          padding: 8px 10px;
+        }
+      }
+    }
+  }
+}
+
+.notif__hide {
+  top: -50%;
+}
+
+
+.header {
+  position: relative;
+  background-image: linear-gradient(
+    rgba(0, 26, 102, 0.6),
+    rgba(1, 34, 53, 0.7)),
+  url(/assets/work-desk__dustin-lee.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 37.5rem;
+  
+  &__logo {
+    padding: 1.5rem 1.625rem;
+    img {
+      height: 2.75rem;
+    }
+  }
+
+  &__text {
+    color: $white;
+    margin: 6.25rem auto;
+    @include breakpoint-down (medium) {
+      margin: 3.25rem auto;
+    }
+
+    h1 {
+      font-weight: 400;
+    }
+
+    p {
+      width: 29%;
+      display: block;
+      margin: auto;
+      @include breakpoint-down (medium) {
+        width: 50%;
+      }
+      @include breakpoint-down (small) {
+        width: 100%;
+      }
+    }
+  }
+}

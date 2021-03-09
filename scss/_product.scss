@@ -1,0 +1,45 @@
+.product {
+  margin-bottom: 74px;
+
+  &__text {
+    display: block;
+    padding-top: 4.375rem;
+    padding-bottom: 3.5rem;
+
+    h1 {
+      font-weight: 400;
+    }
+    p {
+      width: 48%;
+      margin: auto;
+
+      @include breakpoint-down (medium) {
+        width: 80%;
+      }
+      @include breakpoint-down (small) {
+        width: 90%;
+      }
+    }
+  }
+
+  &__box {
+    border: 1px solid #797979;
+    padding: 28px 20px;
+  }
+
+  &__title {
+    font-weight: 300;
+    margin: 0;
+    margin-bottom: 22px;
+  }
+
+  &__description {
+    text-align: justify;
+  }
+}
+
+// Icon
+.fas, .far {
+  font-size: 28px;
+  color: #797979;
+}
